@@ -4,10 +4,8 @@ Weighting Adversarial Neural Network
 
 Synthetic Experiment Setup |  No Reweighting            
 :-------------------------:|:-------------------------:
-![](images/toy_setup.png)  |  ![](images/noreweight.gif)
-:-------------------------:|:-------------------------:
+<img src="images/toy_setup.png" width="300px" height="100px"> |  ![](images/noreweight.gif)
 TrAdaBoostR2               |  WANN         
-:-------------------------:|:-------------------------:
 | ![](images/tradalong100.gif)  |   ![](images/wann.gif)
 
 WANN is a supervised domain adaptation method suited for regression tasks. The algorithm is an instance-based method which learns a reweighting of source instance losses in order to correct the difference between source and target distributions.
