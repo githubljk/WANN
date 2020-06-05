@@ -56,7 +56,7 @@ Running superconductivity experiments can be done in two ways:
 - In the command line with: `$ python wann\uci_experiments.py`
 - Within the following notebooks: `notebooks\UCI_experiments.ipynb`
 
-![uci](images/superconduct_experiments.PNG)
+![uci](images/superconductivity.PNG)
 
 ### Kin Experiments
 
@@ -64,7 +64,7 @@ Running kin experiments can be done in two ways:
 - In the command line with: `$ python wann\kin_experiments.py`
 - Within the following notebooks: `notebooks\Kin_experiments.ipynb`
 
-![kin](images/kin_experiments.PNG)
+![kin](images/kin.PNG)
 
 ### Sentiment Analysis Experiments
 
@@ -72,5 +72,5 @@ Running sentiment analysis experiments can be done in two ways:
 - In the command line with: `$ python wann\sa_experiments.py`
 - Within the following notebooks: `notebooks\sa_experiments.ipynb`
 
-![sa](images/sa_experiments.PNG)
+![sa](images/sa.PNG)
 
