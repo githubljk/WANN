@@ -5,7 +5,7 @@ Weighting Adversarial Neural Network
 Synthetic Experiment Setup |  No Reweighting            
 :-------------------------:|:-------------------------:
 <img src="images/toy_setup.png" width="350px" height="180px"> | <img src="images/noreweight.gif" width="400px" height="200px">
-TrAdaBoostR2               |  WANN         
+**TrAdaBoostR2**          |  **WANN**         
 | <img src="images/tradalong100.gif" width="400px" height="200px">  |  <img src="images/wann.gif" width="400px" height="200px">
 
 WANN is a supervised domain adaptation method suited for regression tasks. The algorithm is an instance-based method which learns a reweighting of source instance losses in order to correct the difference between source and target distributions.
@@ -39,7 +39,10 @@ WANN algorithm is compared to several instances-based domain adaptation base-lin
 
 The implementation of the methods can be found in the `wann\methods` folder. For GDM, code can be found at https://cims.nyu.edu/~munoz/ 
 
-The experiments are conducted on one synthetic and three benchmark datasets: *Superconductivity*, *kin 8xy family* and *Amazon reviews*.
+The experiments are conducted on one synthetic and three benchmark datasets:
+- Superconductivity [UCI](https://archive.ics.uci.edu/ml/datasets/superconductivty+data#)
+- Kin 8xy family [Delve project](http://www.cs.toronto.edu/~delve/data/datasets.html)
+- Amazon reviews [cs.jhu](https://www.cs.jhu.edu/~mdredze/datasets/sentiment/index2.html)
 
 ### Synthetic Experiment
 
