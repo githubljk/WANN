@@ -26,7 +26,8 @@ Code for the numerical experiments requires the following packages:
 - `matplotlib` (for visualization)
 
 The file `environment.yml` can be used to reproduce the same conda environment as the one used to conduct the experiments with the following command line:
-`conda env create -f environment.yml`
+
+`$ conda env create -f environment.yml`
 
 ## Experiments
 
