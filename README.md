@@ -4,7 +4,7 @@ Weighting Adversarial Neural Network
 
 Synthetic Experiment Setup |  No Reweighting            
 :-------------------------:|:-------------------------:
-<img src="images/toy_setup.png" width="400px" height="200px"> | <img src="images/noreweight.gif" width="400px" height="200px">
+<img src="images/toy_setup.png" width="350px" height="180px"> | <img src="images/noreweight.gif" width="400px" height="200px">
 TrAdaBoostR2               |  WANN         
 | <img src="images/tradalong100.gif" width="400px" height="200px">  |  <img src="images/wann.gif" width="400px" height="200px">
 
