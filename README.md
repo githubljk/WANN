@@ -4,12 +4,12 @@ Weighting Adversarial Neural Network
 
 Synthetic Experiment Setup |  No Reweighting           |   TrAdaBoostR2            |  WANN 
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-![](images/toy_setup.png)  |  ![](noreweight.gif)      |    ![](tradalong100.gif)  |   ![](wann.gif)
+![](images/toy_setup.png)  |  ![](images/noreweight.gif)      |    ![](images/tradalong100.gif)  |   ![](images/wann.gif)
 
 WANN is a supervised domain adaptation method suited for regression tasks. The algorithm is an instance-based method which learns a reweighting of source instance losses in order to correct the difference between source and target distributions.
 
 
-![model](images/model.PNG)
+![model](images/paint_wann_algo_v2.jpg)
 
 WANN algorithm consists to train three networks in parallel in the same gradient descent. The *weighting* network *W* learns the source instances weights which are multiplied to the source losses of the *task* and *discrepancy* networks *ht* and *hd*. The last network, which estimates the *Y*-discrepancy distance between the reweighted source and target instances, is trained with an opposite objective function (*-G*) than the two others. This is done by using a Reversal Gradient Layer (RGL) in bold on the Figure.
 
