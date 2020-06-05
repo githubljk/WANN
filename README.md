@@ -2,6 +2,8 @@
 
 Weighting Adversarial Neural Network
 
+An online demo of the algorithm is available at https://anonymousaccount0.github.io/demo/
+
 Synthetic Experiment Setup |  No Reweighting            
 :-------------------------:|:-------------------------:
 <img src="images/toy_setup.png" width="350px" height="180px"> | <img src="images/noreweight.gif" width="400px" height="200px">
