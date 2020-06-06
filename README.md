@@ -2,6 +2,8 @@
 
 Weighting Adversarial Neural Network
 
+An online demo of the algorithm is available at https://anonymousaccount0.github.io/demo/
+
 Synthetic Experiment Setup |  No Reweighting            
 :-------------------------:|:-------------------------:
 <img src="images/toy_setup.png" width="350px" height="180px"> | <img src="images/noreweight.gif" width="400px" height="200px">
@@ -13,7 +15,7 @@ WANN is a supervised domain adaptation method suited for regression tasks. The a
 
 ![model](images/paint_wann_algo_v2.jpg)
 
-WANN algorithm consists to train three networks in parallel in the same gradient descent. The *weighting* network *W* learns the source instances weights which are multiplied to the source losses of the *task* and *discrepancy* networks *ht* and *hd*. The last network, which estimates the *Y*-discrepancy distance between the reweighted source and target instances, is trained with an opposite objective function (*-G*) than the two others. This is done by using a Reversal Gradient Layer (RGL) in bold on the Figure.
+WANN algorithm consists to train three networks in parallel in the same gradient descent. The *weighting* network *W* learns the source instances weights which are multiplied to the source losses of the *task* and *discrepancy* networks *ht* and *hd*. The last network, which estimates the *Y*-discrepancy between the reweighted source and target instances, is trained with an opposite objective function (*-G*) than the two others. This is done by using a Reversal Gradient Layer (RGL) in bold on the Figure.
 
 ## Requirements
 
@@ -26,7 +28,8 @@ Code for the numerical experiments requires the following packages:
 - `matplotlib` (for visualization)
 
 The file `environment.yml` can be used to reproduce the same conda environment as the one used to conduct the experiments with the following command line:
-`conda env create -f environment.yml`
+
+`$ conda env create -f environment.yml`
 
 ## Experiments
 
@@ -56,7 +59,7 @@ Running superconductivity experiments can be done in two ways:
 - In the command line with: `$ python wann\uci_experiments.py`
 - Within the following notebooks: `notebooks\UCI_experiments.ipynb`
 
-![uci](images/superconduct_experiments.PNG)
+![uci](images/superconductivity.PNG)
 
 ### Kin Experiments
 
@@ -64,7 +67,7 @@ Running kin experiments can be done in two ways:
 - In the command line with: `$ python wann\kin_experiments.py`
 - Within the following notebooks: `notebooks\Kin_experiments.ipynb`
 
-![kin](images/kin_experiments.PNG)
+![kin](images/kin.PNG)
 
 ### Sentiment Analysis Experiments
 
@@ -72,5 +75,5 @@ Running sentiment analysis experiments can be done in two ways:
 - In the command line with: `$ python wann\sa_experiments.py`
 - Within the following notebooks: `notebooks\sa_experiments.ipynb`
 
-![sa](images/sa_experiments.PNG)
+![sa](images/sa.PNG)
 
