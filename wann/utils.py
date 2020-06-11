@@ -222,7 +222,7 @@ def kin(name='kin-8fh'):
     Load kin 8xy family dataset by name
     """
     folder = os.path.dirname(__file__)
-    path = folder + "\\..\\dataset\\kin\\"
+    path = folder + "/../dataset/kin/"
     try:
         data = open(path + name + ".txt")
     except:
@@ -253,7 +253,7 @@ def sa(source, target):
     Load sentiment analysis dataset giving source and target domain names
     """
     folder = os.path.dirname(__file__)
-    path = folder + "\\..\\dataset\\sa\\"
+    path = folder + "/../dataset/sa/"
     try:
         file = open(path + "kitchen.txt")
     except:
@@ -356,7 +356,7 @@ def _get_reviews(domain):
     Return preprocessed reviews and labels
     """
     folder = os.path.dirname(__file__)
-    reviews, labels = _get_reviews_and_labels_from_txt(folder + "\\..\\dataset\\sa\\" + domain + ".txt")    
+    reviews, labels = _get_reviews_and_labels_from_txt(folder + "/../dataset/sa/" + domain + ".txt")    
     reviews = _preprocess_review(reviews)
     return reviews, labels
 
@@ -386,7 +386,7 @@ def superconduct():
     Load and preprocess superconductivity dataset
     """
     folder = os.path.dirname(__file__)
-    path = folder + "\\..\\dataset\\uci\\"
+    path = folder + "/../dataset/uci/"
     try:
         data = pd.read_csv(path + "superconductivity.csv")
     except:
@@ -449,7 +449,7 @@ def download_kin(path):
         tar.extractall(path + kin)
         tar.close()
     
-        with gzip.open(path + kin + "\\" + kin + "\\Dataset.data.gz", 'rb') as f_in:
+        with gzip.open(path + kin + "/" + kin + "/Dataset.data.gz", 'rb') as f_in:
             with open(path + kin + '.txt', 'wb') as f_out:
                 shutil.copyfileobj(f_in, f_out)
         os.remove(path + kin + ".tar.gz")
@@ -473,11 +473,11 @@ def download_sa(path):
         with open(path + 'books.txt', 'wb') as f_out:
             shutil.copyfileobj(f_in, f_out)
             
-    shutil.move(path + "domain_sentiment_data\\sorted_data_acl\\dvd\\unlabeled.review",
+    shutil.move(path + "domain_sentiment_data/sorted_data_acl/dvd/unlabeled.review",
                 path + 'dvd.txt')
-    shutil.move(path + "domain_sentiment_data\\sorted_data_acl\\electronics\\unlabeled.review",
+    shutil.move(path + "domain_sentiment_data/sorted_data_acl/electronics/unlabeled.review",
                 path + 'electronics.txt')
-    shutil.move(path + "domain_sentiment_data\\sorted_data_acl\\kitchen_&_housewares\\unlabeled.review",
+    shutil.move(path + "domain_sentiment_data/sorted_data_acl/kitchen_&_housewares/unlabeled.review",
                 path + 'kitchen.txt')
     
     os.remove(path + "book.unlabeled.gz")

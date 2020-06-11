@@ -84,17 +84,17 @@ def run_uci_experiments(method, get_base_model, get_encoder, get_task,
     print("\n")
     
     folder = os.path.dirname(__file__)
-    save_path = folder + "\\..\\dataset\\results\\" + "uci_" + method + "_" + str(random_state)
+    save_path = folder + "/../dataset/results/" + "uci_" + method + "_" + str(random_state)
     df = pd.DataFrame(columns=['state', 'method', 'source', 'target', 'score'])
     if save:
         try:
             df.to_csv(save_path + ".csv")
         except:
             try:
-                os.mkdir(folder + "\\..\\dataset\\results")
+                os.mkdir(folder + "/../dataset/results")
             except:
-                os.mkdir(folder + "\\..\\dataset")
-                os.mkdir(folder + "\\..\\dataset\\results")
+                os.mkdir(folder + "/../dataset")
+                os.mkdir(folder + "/../dataset/results")
             df.to_csv(save_path + ".csv")
     
     for source in [0, 1, 2, 3]:

@@ -99,17 +99,17 @@ def run_kin_experiments(method, get_base_model, get_encoder, get_task,
     print(" ")   
     bug = False
     folder = os.path.dirname(__file__)
-    save_path = folder + "\\..\\dataset\\results\\" + "kin_" + method + "_" + str(random_state)
+    save_path = folder + "/../dataset/results/" + "kin_" + method + "_" + str(random_state)
     df = pd.DataFrame(columns=['state', 'method', 'source', 'target', 'score'])
     if save:
         try:
             df.to_csv(save_path + ".csv")
         except:
             try:
-                os.mkdir(folder + "\\..\\dataset\\results")
+                os.mkdir(folder + "/../dataset/results")
             except:
-                os.mkdir(folder + "\\..\\dataset")
-                os.mkdir(folder + "\\..\\dataset\\results")
+                os.mkdir(folder + "/../dataset")
+                os.mkdir(folder + "/../dataset/results")
             df.to_csv(save_path + ".csv")
     
     for source in ['kin-8fh', 'kin-8fm', 'kin-8nh', 'kin-8nm']:
