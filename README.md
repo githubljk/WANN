@@ -31,6 +31,8 @@ The file `environment.yml` can be used to reproduce the same conda environment a
 
 `$ conda env create -f environment.yml`
 
+!! The environment has been built on Windows, it seems that the above command line does not work on Ubuntu. If you use this operating system, please create a new environment and install the above packages using `conda install` or `pip install`.
+
 ## Experiments
 
 WANN algorithm is compared to several instances-based domain adaptation base-lines:
